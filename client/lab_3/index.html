@@ -1,5 +1,53 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Salmeron Labs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!--wrapper-->
+    <header class="header"><h1>Erick Salmeron Labs for INST377</h1></header>
+      <div class="container">
+        <!--container-->
+        <div class="left_section box">
+            <!--left input-->
+          <h2 class="header">Album Names</h2>
+          <ol class="box">
+            <li>Under Pressure- Logic</li>
+            <li>The Incredible True Story- Logic</li>
+            <li>After Hours-The Weeknd</li>
+            <li>Un Verano Sin Ti- Bad Bunny</li>
+            <li>beerbongs & bentleys- Post Malone</li>
+          </ol>
+        </div>
+        <div class="right_section box">
+            <!--right input-->
+          <h2 class="header h2">Image Carousel</h2>
+          <div class="carousel">
+              <button class="prev">prev</button>
+              <div class="slides">
+                <div class="carousel_item visible"><img src ="images/spiderman-1.png"/></div>
+                <div class="carousel_item hidden"><img src ="images/spiderman-2.png"/></div>
+                <div class="carousel_item hidden"><img src ="images/spiderman-3.png"/></div>
+                <div class="carousel_item hidden"><img src ="images/spiderman-4.png"/></div>
+              </div>
+              <button class="next">next</button>
+          </div>
+          <div class="box">
+            <p>Description of Images above:</p>
+            <p>
+                These 4 Images come from the online HTML tutorial Number 3. The are used to discuss image formatting on the web. The following are pixel based-image formats: Gifs are used<br>
+                for animation, jpg for handeling large color palettes, png for anything thats not a photo or an animation. Svg is a vector based format which allows for flexible scaling of an image<br>
+                without the lose of quality.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">Erick-Salmeron <a href="http://github.com/erick-salmeron/INST377-Lab-Work/" target="_blank" rel="noopener noreferrer">Github Account</a></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
