@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erick Salmeron Labs</title>
     
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
 
     <link rel="stylesheet" href="style.css" />
 
     <!--  put this AFTER Leaflet's CSS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-      crossorigin=""
-    ></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
@@ -37,13 +29,12 @@
                     <input type="text" id="resto" name="resto">
                     </div>
                     <button type="button" id="generate" class="hidden">Generate list</button>
-                    <button type="button" class="filter_button">Filter Data</button>
                 </form>
             </div>
             <div class="right_section box">
                 <h3>List of Local Restaurants</h3>
+                <div id="map" class="box"></div>
                 <ol  class="box" id ="restaurant_list">
-                    <div id="map" class="box"></div>
                     A list of local restaurants from an API
                     <div class="lds-ellipsis" id="data_load_animation"><div></div><div></div><div></div><div></div></div>   
                 </ol>
