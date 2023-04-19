@@ -45,6 +45,7 @@ function getRandomIntInclusive(min, max) {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(carto);
+    return carto;
   }
 
   function markerPlace(array, map) {
@@ -67,6 +68,7 @@ function getRandomIntInclusive(min, max) {
     const mainForm = document.querySelector(".main_form"); // This class name needs to be set on your form before you can listen for an event on it
     const filterButton = document.querySelector(".filter_button");
     const loadDataButton = document.querySelector("#data_load");
+    const clearDataButton = document.querySelector("#data_clear");
     const generateListButton = document.querySelector("#generate");
     const textField = document.querySelector("#resto");
   
@@ -99,7 +101,7 @@ function getRandomIntInclusive(min, max) {
       parsedData = storedList
 
       if (parsedData?.length >0){
-        generateListButton.classList.remove('hidden'):
+        generateListButton.classList.remove('hidden');
       }
       loadAnimation.style.display = "none";
     });
